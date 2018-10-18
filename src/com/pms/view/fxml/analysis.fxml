@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="480.0" prefWidth="960.0" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pms.view.ctrl.AnalysisCtrl">
+   <children>
+      <AnchorPane fx:id="parentPane" layoutX="45.0" layoutY="95.0" style="-fx-background-color: #616161;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="57.0" />
+      <HBox alignment="CENTER_RIGHT" layoutX="296.0" layoutY="21.0" prefWidth="544.0" spacing="30.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <ComboBox fx:id="clientTypeCombo" minWidth="0.0" onAction="#clientTypeComboEvent" prefHeight="27.0" prefWidth="207.0" />
+            <ComboBox fx:id="dataTypeCombo" minWidth="0.0" onAction="#dataTypeComboEvent" prefHeight="27.0" prefWidth="207.0" promptText="Data Type" />
+            <ComboBox fx:id="graphTypeCombo" minWidth="0.0" onAction="#graphTypeComboEvent" prefHeight="27.0" prefWidth="207.0" promptText="GraphType" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

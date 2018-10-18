@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" style="-fx-background-color: rgb(41,40,45);" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pms.view.ctrl.CustomerOrderViewCtrl">
+   <children>
+      <Button fx:id="addNewBtn" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#addNewBtnEvent" prefHeight="35.0" prefWidth="207.0" text="Add New" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+      <HBox layoutY="20.0" spacing="10.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="60.0">
+         <children>
+            <TableView fx:id="orderTable" prefWidth="502.0" HBox.hgrow="ALWAYS">
+               <columns>
+                  <TableColumn fx:id="dateCol" maxWidth="120.0" minWidth="120.0" prefWidth="120.0" text="Date" />
+                  <TableColumn fx:id="timeCol" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" text="Time" />
+                  <TableColumn fx:id="idCol" maxWidth="35.0" minWidth="35.0" prefWidth="35.0" text="Id" />
+                  <TableColumn fx:id="customerCol" prefWidth="75.0" text="Customer" />
+               </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+            <VBox prefHeight="484.0" prefWidth="422.0" spacing="10.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <TableView fx:id="orderDataTable" VBox.vgrow="ALWAYS">
+                     <columns>
+                        <TableColumn fx:id="amountCol" prefWidth="75.0" text="Amount" />
+                        <TableColumn fx:id="rateCol" prefWidth="75.0" text="Rate" />
+                        <TableColumn fx:id="discountCol" prefWidth="75.0" text="Discount" />
+                        <TableColumn fx:id="remainderCol" prefWidth="75.0" text="Remainder" />
+                     </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+                  <GridPane hgap="5.0" prefHeight="97.0" prefWidth="422.0" style="-fx-background-color: #616161;" vgap="10.0">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" minWidth="10.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints fillWidth="false" halignment="LEFT" hgrow="SOMETIMES" minWidth="10.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="42.0" minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="36.0" minHeight="10.0" prefHeight="33.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label text="Total Amount" textFill="WHITE">
+                           <font>
+                              <Font name="Segoe UI" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label text="Discount" textFill="WHITE" GridPane.columnIndex="2">
+                           <font>
+                              <Font name="Segoe UI" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label text="Final Price" textFill="WHITE" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Segoe UI Bold" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label text="CC Points" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Segoe UI" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="totalAmountLabel" text="0" textFill="WHITE" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="Segoe UI" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="finalPriceLabel" text="180.34" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Segoe UI Bold" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="discountLabel" text="56.45" textFill="WHITE" GridPane.columnIndex="3">
+                           <font>
+                              <Font name="Segoe UI" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="pointsLabel" text="7.5" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Segoe UI" size="22.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </GridPane>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="10.0" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="400.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <Button fx:id="viewAllBtn" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#viewAllBtnEvent" prefHeight="35.0" prefWidth="100.0" text="View All" />
+            <Button fx:id="todayBtn" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#todayBtnEvent" prefHeight="35.0" prefWidth="80.0" text="Today" />
+            <Region prefWidth="10.0" />
+            <ComboBox fx:id="yearCombo" maxHeight="1.7976931348623157E308" onAction="#yearComboEvent" prefWidth="100.0" promptText="Year" />
+            <ComboBox fx:id="monthCombo" maxHeight="1.7976931348623157E308" onAction="#monthComboEvent" prefWidth="150.0" promptText="Month" />
+            <ComboBox fx:id="dayCombo" maxHeight="1.7976931348623157E308" maxWidth="100.0" onAction="#dayComboEvent" prefWidth="100.0" promptText="Day" HBox.hgrow="ALWAYS" />
+            <TextField fx:id="searchCustomerText" maxWidth="1.7976931348623157E308" prefHeight="35.0" prefWidth="260.0" promptText="Search By Customer" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

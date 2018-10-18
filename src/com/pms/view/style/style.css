@@ -1,0 +1,338 @@
+/* -------------- Logout Button ----------------------- */
+.logoutBtn{
+    -fx-background-radius: 100;
+    -fx-border-radius: 100;
+    -fx-border-width: 2;
+    -fx-border-color : rgb(255,255,255);
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+}
+
+.logoutBtn:hover {
+    -fx-background-color: rgb(43,87,154);
+}
+
+/* ---------------- windowBtns -------------------------- */
+
+.windowBtns{
+    -fx-background-radius: 100;
+    -fx-border-radius: 100;
+    -fx-border-width: 0;
+    -fx-background-color: rgb(255,255,255);
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+}
+
+.windowBtns:hover {
+    -fx-background-color: #bfe11e;
+}
+
+/* ---------------- menuList -------------------------- */
+
+.menuList {
+    -fx-font-size: 16px;
+    -fx-alignment: center;
+    -fx-text-fill: #ffffff;
+}
+
+.menuList:hover {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-background-color: #36b8b6;
+}
+
+.menuList:pressed {
+    -fx-font-size: 16px;
+    -fx-font-weight: normal;
+    -fx-background-color: #070b80;
+}
+
+/* ----------------- my list view -------------------------*/
+
+#my .list-cell:filled:selected:focused {
+    -fx-background-color: #1A1A1C;
+    -fx-text-fill: white;
+}
+
+#my .list-cell:filled:selected{
+    -fx-background-color: #1A1A1C;
+    -fx-text-fill: white;
+}
+
+#my .list-cell {
+    -fx-background-color: #616161;
+    -fx-text-fill: white;
+    -fx-font: 14px "Segoe UI Semibold";
+    -fx-alignment: CENTER_LEFT;
+}
+
+#my .list-cell:filled:hover {
+    -fx-background-color: #313038;
+    -fx-text-fill: white;
+}
+
+.myList{
+    -fx-background-color: #616161;
+    -fx-background-insets: 0;
+}
+
+/* ------------------------- messageBoxBtns --------------------------------- */
+
+.messageBoxBtns{
+    -fx-background-radius: 100;
+    -fx-border-radius: 100;
+    -fx-border-width: 0;
+    -fx-background-color: rgb(255,255,255);
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+}
+
+.messageBoxBtns:hover {
+    -fx-background-color: rgb(0,0,0);
+}
+
+/* ------------------------- messageOkBtn --------------------------------- */
+.messageOkBtn {
+    -fx-padding: 5 22 5 22;  
+    -fx-background-radius: 0;
+    -fx-border-color : rgb(244,244,244);
+    -fx-border-width : 2;
+    -fx-background-color: rgb(43,87,154);
+    -fx-background-insets: 0;
+    -fx-border-insets: 0; 
+    -fx-font-size: 12px;
+    -fx-text-fill: rgb(255,255,255);
+}
+ 
+.messageOkBtn:hover{
+    -fx-background-color: rgb(60,104,217);
+}
+ 
+.messageOkBtn:pressed{ 
+    -fx-border-color : rgb(244,244,244);  
+    -fx-background-color: rgb(33,33,33);
+    -fx-text-fill: rgb(255,255,255);
+}
+
+ 
+.messageOkBtn:disabled, .button:default:disabled{   
+    -fx-background-color: rgb(204,204,204);
+    -fx-border-color : rgb(244,244,244);
+    -fx-text-fill: rgb(130,130,130);
+}
+
+
+
+/* ------------------------- blackCircle --------------------------------- */
+
+.blackCircle {
+    -fx-background-radius: 100;
+    -fx-border-radius: 100;
+    -fx-border-width: 2;
+    -fx-border-color : #333333;
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+}
+ 
+.blackCircle:hover{
+    -fx-background-color: #cccccc;
+}
+ 
+.blackCircle:pressed, .blackCircle:default:hover:pressed{
+    -fx-background-radius: 100;
+    -fx-border-radius: 100;
+    -fx-border-width: 2;
+    -fx-border-color : black;
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+}
+ 
+.blackCircle:focused{
+    -fx-background-radius: 100;
+    -fx-border-radius: 100;
+    -fx-border-width: 2;
+    -fx-border-color : black;
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+}
+
+.button {
+    -fx-background-color: #313038;
+    -fx-background-radius: 100, 0;
+    
+    -fx-border-color: #666692;
+    -fx-border-width : 2px;
+    -fx-border-radius: 100;
+    
+    -fx-text-fill: #c3c3cf;
+    -fx-font-weight: bold;
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 16px;
+}
+
+.button:hover {
+    -fx-background-color: #666692;
+}
+
+.text-input{
+    -fx-background-color: #29282d;
+    -fx-background-radius: 100, 0;
+   
+    -fx-border-color: #666692;
+    -fx-border-width: 2px;
+    -fx-border-radius: 100;
+
+    -fx-text-fill: #c3c3cf;
+    -fx-font-weight: bold;
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 16px;   
+    
+    -fx-prompt-text-fill: #52525e;
+}
+
+.text-input:hover{
+    -fx-background-color: #313038;
+    -fx-prompt-text-fill: #313038;
+}
+
+/*---------------------------------- Label ---------------------------------- */
+
+.dashBoardLabel {
+    -fx-background-color: rgb(26,26,28);
+    -fx-text-fill: #c3c3cf;
+}
+
+/*------------------------------- Table View -------------------------------- */
+.table-view{
+   -fx-background-color: #616161;
+   -fx-border-color: #666692;
+   -fx-border-width : 2px;
+}
+
+.table-view .column-header {
+    -fx-background-color: #313038;  
+    -fx-border-color: #ffffff;
+    -fx-border-width : 1px;   
+}
+
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: #c3c3cf;  
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 14px;
+}
+
+.table-view .filler{
+   -fx-background-color: transparent;
+}
+
+.table-view .table-cell{   
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-family: "Consolas";
+    -fx-font-size: 14px;
+}
+
+.table-row-cell{
+    -fx-background-color: -fx-table-cell-border-color, #616161;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+
+.table-row-cell .text{
+    -fx-fill: #ffffff;
+    -fx-weight: bold;
+    -fx-size: 16px; 
+}
+
+.table-row-cell:hover {
+    -fx-background-color: #666692; 
+}
+
+.table-row-cell:selected {
+    -fx-background-color: yellow; 
+}
+
+.table-row-cell:selected .text {
+    -fx-fill: #070b80;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;   
+}
+
+/* ---------------------- Date Picker ------------------------- */
+.date-picker {
+    -fx-background-color: #29282d;
+    -fx-background-radius: 100 0 0 100;
+    
+}
+
+.date-picker > .text-field {
+    -fx-background-color: #29282d;
+    -fx-background-radius: 100 0 0 0;
+    -fx-border-width : 2 0 2 2;
+    -fx-border-radius: 100 0 0 100;
+}
+
+.date-picker > .text-field:focused {
+   -fx-background-color: #29282d;  
+}
+
+.date-picker > .arrow-button {
+    -fx-background-color: #313038;
+    -fx-background-radius: 0 100 100 0;
+    
+    -fx-border-color: #666692;
+    -fx-border-width : 2 2 2 0;
+    -fx-border-radius: 0 100 100 0;
+}
+
+.date-picker > .arrow-button:hover {
+    -fx-background-color: #666692;
+}
+
+.choice-box {
+    -fx-background-color: #29282d;
+    -fx-background-radius: 100, 0;
+   
+    -fx-border-color: #666692;
+    -fx-border-width: 2px;
+    -fx-border-radius: 100;
+    
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 16px;   
+}
+
+.choice-box .text-field{
+    -fx-text-fill: #c3c3cf;
+}
+
+/*------------------- Combo Box ------------------------------*/
+
+.combo-box {
+    -fx-background-color: #29282d;
+    -fx-background-radius: 100, 0;
+   
+    -fx-border-color: #666692;
+    -fx-border-width: 2px;
+    -fx-border-radius: 100;
+    
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 16px;   
+}
+
+.combo-box .text{
+    -fx-border-width: 0px;
+    -fx-fill: #c3c3cf;
+}
+
+.combo-box .arrow-button{
+    -fx-background-color: transparent;
+}
