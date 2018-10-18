@@ -24,6 +24,7 @@ import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
+//fuck
 /**
  *
  * @author RISITH-PC
@@ -67,6 +68,7 @@ public class Main extends Application {
     }
     
     public static void initializeDatabase(){
+        System.out.println("SQL Database");
         try {
             CustomerClientImpl.getInstance().readAll();
             CustomerOrderClientImpl.getInstance().readAll();
