@@ -5,6 +5,7 @@
  */
 package com.pms.main;
 
+import com.pms.base.client.CustomerClient;
 import com.pms.base.client.impl.CustomerClientImpl;
 import com.pms.base.client.impl.CustomerOrderClientImpl;
 import com.pms.base.client.impl.CustomerOrderDataClientImpl;
@@ -37,7 +38,8 @@ public class Main extends Application {
     
     @Override
     public void start(Stage stage){
-        
+        System.out.println("SQL Database");
+        CustomerClient customerSQLClient;
         timeTask = new Task<Void>() {
             @Override 
             public Void call() throws InterruptedException {

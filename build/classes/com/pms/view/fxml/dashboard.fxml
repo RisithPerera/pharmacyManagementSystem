@@ -358,7 +358,11 @@
                <children>
                   <AnchorPane prefWidth="500.0" style="-fx-background-color: #616161;" HBox.hgrow="ALWAYS">
                      <children>
-                        <Button layoutX="104.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#addNewCustomerOrderBtnEvent" prefHeight="35.0" prefWidth="258.0" text="Add New Customer Purshase" />
+                        <HBox alignment="CENTER" layoutX="104.0" layoutY="14.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <children>
+                              <Button maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#addNewCustomerOrderBtnEvent" prefHeight="35.0" prefWidth="258.0" text="Add New Customer Purshase" />
+                           </children>
+                        </HBox>
                         <GridPane layoutX="80.0" layoutY="69.0">
                            <columnConstraints>
                               <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="150.0" />
@@ -470,7 +474,11 @@
                   </AnchorPane>
                   <AnchorPane prefWidth="500.0" style="-fx-background-color: #616161;" HBox.hgrow="ALWAYS">
                      <children>
-                        <Button layoutX="104.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#addNewNormalOrderBtnEvent" prefHeight="35.0" prefWidth="258.0" text="Add New Normal Purshase" />
+                        <HBox alignment="CENTER" layoutX="104.0" layoutY="14.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <children>
+                              <Button maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#addNewNormalOrderBtnEvent" prefHeight="35.0" prefWidth="258.0" text="Add New Normal Purshase" />
+                           </children>
+                        </HBox>
                      </children></AnchorPane>
                </children>
             </HBox>
